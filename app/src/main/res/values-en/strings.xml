@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fit Gym App</string>
+
+
+
+
+    //activity_administrator_main
+    <string name="txtadmin">Administrator App</string>
+    <string name="tete">Manage your sales and users securely and quickly</string>
+    <string name="ttt">Options</string>
+    <string name="agregar_telefono_gym">Gym phone number, click here to add or edit</string>
+    <string name="VerdatosMembresia">View Membership Data</string>
+    <string name="AgregarEntrenador">Add Trainer</string>
+    <string name="vertodos">View all users</string>
+    <string name="agregar_producto">Add Product</string>
+    <string name="ver_productos_admin">Product Inventory</string>
+    <string name="ir_homemain">Go to user app</string>
+    <string name="usuario_gym">Manage user, click here</string>
+    <string name="passwrod_gym">Manage password, click here</string>
+
+    //falta traducri
+    //activity_add_extra_user_data
+    <string name="btnAgregarDatos">Save</string>
+    <string name="txtImagen">Choose a Profile Image</string>
+    <string name="txtdatosss">Add Your Current Data</string>
+
+
+
+    //add_trainer_admin
+    <string name="ID_E">ID 🧍‍</string>
+    <string name="NombreE">Full Name 🧍‍</string>
+    <string name="EdadE">Age 🧍‍</string>
+    <string name="TEL_E">Phone 🧍‍</string>
+    <string name="btnHoraInicio">SELECT ENTRY TIME</string>
+    <string name="btnHoraSalida">SELECT EXIT TIME</string>
+    <string name="txthoraE">Entry Time:</string>
+    <string name="txthoraS">Exit Time:</string>
+    <string name="btnAgregarE">Add</string>
+
+    //add_membership_admin
+    <string name="tesd">Select Membership Type</string>
+    <string name="tipoMembresiaNueva">New Membership Type</string>
+    <string name="precio">Price</string>
+    <string name="areas">Areas</string>
+    <string name="descripcion">Description</string>
+    <string name="btnAgregarMembresia">Register</string>
+    <string name="btnVerMembresia">View Memberships</string>
+    <string name="btnVerMembresiasCompradas">View Purchased Memberships</string>
+
+    //buy_user_membership
+    <string name="verificar_compra">Securely Purchase Your Membership</string>
+    <string name="txtTipo_compra">Details</string>
+    <string name="tipo_membresia">Membership Type</string>
+    <string name="precio_membresia">Membership Price</string>
+    <string name="areas_membresia">Membership Areas</string>
+    <string name="descripcion_membresia">Membership Description</string>
+    <string name="btnGuardar_membresia">Edit</string>
+    <string name="btnElimina_membresia">Delete</string>
+    <string name="btnComprar_membresia">Buy</string>
+
+    //contact_trainer
+    <string name="textoContactarE">Contact Trainer</string>
+    <string name="textoCon">Easy and Fast</string>
+    <string name="txtingresar">Enter the Phone Number #️⃣</string>
+    <string name="txtingresarmsj">Enter the Message 📩</string>
+
+    //contact_user_admin
+    <string name="textoContactarU">Contact User</string>//shared
+
+
+    //
+    <string name="issy">Edit your current data quickly</string>
+    <string name="tre">Click on the image to edit</string>
+    <string name="pessso">Weight 🧍:</string>
+    <string name="objadc">Goal 🏁</string>
+    <string name="cornofono">Phone</string>
+    <string name="ilegal">Age 🔞</string>
+    <string name="btnDatosEditar">Edit</string>
+
+    //edit_delete_product_admin
+    <string name="escanear">Scan Product</string>
+    <string name="qrcode">QR 12345..</string>
+    <string name="textView4">Image</string>
+    <string name="textView3">Product Name</string>
+    <string name="textView5">Price</string>
+    <string name="textView_cantidad">Quantity</string>
+    <string name="editar_producto">Edit</string>
+    <string name="eliminar_producto">Delete</string>
+
+    //edit_membership_admin
+    <string name="edtmm">Edit Membership</string>
+    <string name="txtingf">Provide all requested information</string>
+    <string name="tipexistmemb">Membership Type</string>
+
+    //delete_edit_trainer_admin
+    <string name="imgactt">Current Image</string>
+    <string name="txtnam">Name 📄‍</string>
+    <string name="txtInicio">Current Entry Time ⏳:</string>
+    <string name="txtSalida">Current Exit Time ⌛:</string>
+    <string name="btnHoraInicioEditar">Edit ENTRY</string>
+    <string name="btnHoraSalidaEditada">Edit EXIT</string>
+    <string name="textElegirId">Click on the image if you want to edit</string>
+
+    //home_main
+
+    //item_purchased_memberships_user
+    <string name="tipoMembresiaCompra">Name 1</string>
+    <string name="mes">1 Month</string>
+    <string name="AreasDisponibles">Functional</string>
+    <string name="LBInicioMembresia">Start:</string>
+    <string name="LBvencimientoMembresia">Expiration</string>
+    <string name="LBestadoMembresia">Status</string>
+    <string name="EstadoMembresia">Active</string>
+
+    <string name="txtAreas">Areas</string>
+    <string name="AreaMembresia">Available area</string>
+
+    //item_registered_users_each_membership
+    <string name="correo">Email</string>
+    <string name="CorreoUsu">email@gmail.com</string>
+    <string name="estado">Status</string>
+    <string name="EstadoUsu">Active</string>
+    <string name="textoAccionEditar">View User</string>
+
+
+
+
+    //item_view_trainers
+    <string name="Hora_Inicio">Start Time</string>
+    <string name="Hora_Salida">End Time</string>
+
+    //item_view_memberships_admin
+    <string name="areas1">Price</string>
+
+    //item_view_memberships_users
+    <string name="aaaarea">Areas</string>
+
+    //login
+    <string name="benvenue">Welcome</string>
+    <string name="tertoid">Enter your ID</string>
+    <string name="testopass">Password</string>
+    <string name="verpassword">Show Password</string>
+    <string name="btnsignin">Sign In</string>
+    <string name="btnRegister">Register</string>
+
+    //login_admin
+    <string name="neta">Enter your administrator ID</string>
+    <string name="btn_irhome">Back</string>
+
+    //my_profile_user
+    <string name="nombre_Usuario">User</string>
+    <string name="text_membresia">Current Membership</string>
+    <string name="LBFechaVencimientoMembresiaActual">Expiration Date</string>
+    <string name="nita">View My Profile</string>
+    <string name="nato">View My Purchases</string>
+
+    //my_extra_data_user
+    <string name="mpp">YOUR PERSONAL DATA</string>
+    <string name="klw">Username</string>
+    <string name="uyt">Name</string>
+    <string name="qwe">Current Goal</string>
+    <string name="sssa">Muscle Mass</string>
+    <string name="nit">Current Weight</string>
+    <string name="numas">Current Age</string>
+
+    //my_purchased_memberships_user
+    <string name="mata">Your Purchased Memberships</string>
+    <string name="matak">Keep better track of your purchases</string>
+
+    //register_user
+    <string name="creacionrango">Create Account</string>
+    <string name="namusus">Username</string>
+    <string name="pupas">Back</string>
+
+    //register_product_admin
+    <string name="addprof">Add Product</string>
+    <string name="addimgh">Add Image</string>
+    <string name="namesonprofd">Product Name</string>
+    <string name="yucascan">Scan</string>
+    <string name="quancant">Quantity</string>
+
+    //select_membership_view_records
+    <string name="ajyet">MANAGE YOUR MEMBERSHIPS</string>
+    <string name="rdef2">SELECT THE MEMBERSHIP YOU WANT TO MANAGE</string>
+
+
+
+
+    //all_purchased_memberships_admin
+    <string name="cartcartttt">VIEW PURCHASES MADE BY USERS</string>
+
+    //view_cart_products
+    <string name="qqqewfvsda">Your Product Cart</string>
+    <string name="qqwwq">Press the product you want to proceed to pay for</string>
+    <string name="nameytst">Name</string>
+    <string name="preciafy">PRICE</string>
+    <string name="totalpaga">Total to Pay</string>
+    <string name="siclaris">You can make separate purchases for each product</string>
+
+    <string name="darkta">PERSONAL DATA OF EACH USER</string>
+    <string name="namename">Name</string>
+    <string name="objactualll">Current Goal</string>
+    <string name="masacts">Muscle Mass</string>
+    <string name="pesactl">Current Weight</string>
+    <string name="edadcactk">Current Age</string>
+    <string name="texto_opciones">Options you can perform</string>
+    <string name="btn_contactar">Contact</string>
+
+    <string name="admentretairners">Manage Your Available Trainers</string>
+    <string name="contestoentrena">Contact Trainer</string>
+
+    <string name="momentodisponibles">Our Available Trainers</string>
+
+    <string name="edtmembrett">Edit Your Memberships</string>
+
+    <string name="compmebretts">Buy Your Best Membership</string>
+    <string name="facsegcr">Easy and Secure Payment System</string>
+
+    //view_product_to_buy
+    <string name="comprar_producto">Quick Purchase</string>
+    <string name="agregarALcarrito">Add to Cart</string>
+
+    //view_user_products
+    <string name="neeeeta">Buy Your Product</string>
+    <string name="inputBuscars">Search for a product</string>
+
+    //goes to 3
+    <string name="textoMembresia">Full Membership</string>
+    <string name="textoCantidad">Number of Active Users</string>
+    <string name="Backd">Back ▶️</string>
+    <string name="texto_vencidos">View Expired Full Membership Records</string>
+    <string name="textoCantidadvv">Number of Expired Users</string>
+    <string name="filda">There are currently no users with expired membership</string>
+    <string name="textoCantidadtodo">All registered users</string>
+    <string name="inputBuscarrewwww">Search by ID 🔎</string>
+    <string name="miconaz">Enter the price of the user you want to see</string>
+    <string name="vvencisos">View Expired</string>
+    <string name="novennciso">View Active</string>
+
+    //menu_part
+    <string name="idmemmeme">Memberships</string>
+    <string name="idininin">Home</string>
+    <string name="identrennenene">Trainers</string>
+    <string name="gtymgym">Gym</string>
+    <string name="perfilperfff">My Profile</string>
+    <string name="cprafaonadea">Purchase</string>
+
+    //2menu_part
+    <string name="rehsjsas">Admin</string>
+    <string name="srhneuhowsqs">My Products</string>
+    <string name="dsgeu4">Add Product</string>
+    <string name="cmpkeka">Scan</string>
+    <string name="cmpwca">My Cart</string>
+    <string name="cmpyeca">Buy</string>
+
+
+    <string name="dircam">Welcome</string>
+    <string name="utyjrhg">An app to improve your administration quality</string>
+    <string name="erbue">About Us</string>
+    <string name="bebeeu">PERSONAL TRAINING</string>
+    <string name="likujh">COMFORT</string>
+    <string name="kuryj">QUALITY</string>
+    <string name="weyee">Click your option</string>
+    <string name="vruru">Contact Us</string>
+    <string name="rbiuy">Tap the icon on the map and then press the blue arrow</string>
+    <string name="rbykut">Gym Phone Number</string>
+    <string name="btukt">Availability</string>
+
+
+
+
+</resources>

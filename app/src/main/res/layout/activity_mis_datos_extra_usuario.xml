@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".Mis_datos_extra_usuario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/color_bar"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:background="@drawable/img_data"
+       android:alpha="0.8"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="30dp"
+           android:text="@string/mpp"
+           android:textColor="#FF5722"
+           android:textSize="32dp"
+           android:textStyle="italic" />
+
+       <LinearLayout
+           android:id="@+id/card_datos"
+           android:layout_width="367dp"
+           android:layout_height="558dp"
+           android:layout_marginHorizontal="15dp"
+           android:layout_marginTop="100dp"
+           android:layout_marginBottom="30dp"
+           android:alpha="0.9"
+           android:animateLayoutChanges="true"
+           android:orientation="vertical">
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginBottom="10dp"
+               android:orientation="vertical"
+               android:padding="7dp">
+
+               <LinearLayout
+                   android:id="@+id/linear_layout"
+                   android:layout_width="280dp"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginLeft="4dp"
+
+                   android:layout_marginTop="2dp"
+                   android:orientation="vertical">
+
+
+                   <RelativeLayout
+                       android:layout_width="140dp"
+                       android:layout_height="110dp"
+                       android:layout_marginLeft="0dp"
+                       android:layout_marginTop="0dp"
+                       android:background="@drawable/cuadro_img">
+
+                       <ImageView
+                           android:id="@+id/imageUsuario"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="0dp"
+                           android:clickable="true"
+                           android:padding="10dp"
+                           app:srcCompat="@drawable/imagen" />
+                   </RelativeLayout>
+
+
+                   <TextView
+                       android:id="@+id/Nombre"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="2dp"
+                       android:text="@string/klw"
+                       android:textColor="@color/teal_700"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/NombreUsu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="2dp"
+                       android:text="@string/uyt"
+                       android:textColor="@color/white"
+                       android:textSize="17sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/objetivo"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="@string/qwe"
+                       android:textColor="@color/teal_700"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/ObjetivoUsu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="@string/sssa"
+                       android:textColor="@color/white"
+                       android:textSize="17sp"
+                       android:textStyle="italic" />
+
+                   <TextView
+                       android:id="@+id/peso"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="@string/nit"
+                       android:textColor="@color/teal_700"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/PesoUsu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="25 kg"
+                       android:textColor="@color/white"
+                       android:textSize="17sp"
+                       android:textStyle="italic" />
+
+                   <TextView
+                       android:id="@+id/edad"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="@string/numas"
+                       android:textColor="@color/teal_700"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/EdadUsu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="25 "
+                       android:textColor="@color/white"
+                       android:textSize="17sp"
+                       android:textStyle="italic" />
+
+                   <TextView
+                       android:id="@+id/telefono"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="@string/cornofono"
+                       android:textColor="@color/teal_700"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/TelefonoUsu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="1010 1010"
+                       android:textColor="@color/white"
+                       android:textSize="17sp"
+                       android:textStyle="italic" />
+
+
+               </LinearLayout>
+
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="200dp"
+                   android:layout_marginTop="380dp"
+                   android:background="@drawable/shape_text_comprar">
+
+                   <TextView
+                       android:id="@+id/textoAccionEditar"
+                       android:layout_width="130dp"
+                       android:layout_height="wrap_content"
+                       android:clickable="true"
+                       android:padding="10dp"
+                       android:text="Opciones"
+                       android:textSize="17sp"
+                       android:textStyle="bold" />
+
+               </RelativeLayout>
+
+
+           </RelativeLayout>
+
+
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/texto_agregarDatos"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="330dp"
+           android:textSize="25dp"
+           android:textStyle="bold"
+           android:visibility="gone"
+         android:textColor="@color/white"
+           android:layout_centerHorizontal="true"
+           android:text="Aun no has agregado tus datos"
+           android:layout_below="@+id/card_datos"/>
+
+       <Button
+           android:id="@+id/btn_agregar_datos"
+           android:layout_width="180dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="25dp"
+           android:textColor="@color/white"
+           android:visibility="gone"
+           android:background="@drawable/card_mem"
+           android:layout_below="@+id/texto_agregarDatos"
+           android:layout_centerHorizontal="true"
+           android:text="Agregar datos" />
+
+   </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_nav"/>
+
+</RelativeLayout>

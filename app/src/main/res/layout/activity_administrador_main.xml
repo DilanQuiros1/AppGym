@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#464051"
+    android:layout_height="match_parent"
+    tools:context=".AdministradorMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/color_bar"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_admin"/>
+
+    <TextView
+        android:id="@+id/txtadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtadmin"
+        android:textColor="@color/teal_700"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtadmin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tete"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="italic" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="359dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="70dp"
+        app:cardCornerRadius="28dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/ttt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ttt"
+                android:textColor="@color/my_primary"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/agregar_telefono_gym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableEnd="@drawable/phone"
+                android:text="@string/agregar_telefono_gym"
+                android:textColor="#FF5722"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/ver_telefono_gym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/VerdatosMembresia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_eliminar"
+                android:text="@string/VerdatosMembresia" />
+
+            <Button
+                android:id="@+id/AgregarEntrenador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VerdatosMembresia"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_editar"
+                android:text="@string/AgregarEntrenador" />
+
+            <Button
+                android:id="@+id/vertodos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_eliminar"
+                android:layout_below="@+id/AgregarEntrenador"
+                android:text="Ver todos los usuarios"/>
+
+            <Button
+                android:id="@+id/agregar_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vertodos"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_editar"
+                android:text="@string/agregar_producto" />
+
+
+            <Button
+                android:id="@+id/ver_productos_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ver_carrito"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_eliminar"
+                android:text="@string/ver_productos_admin" />
+
+            <Button
+                android:id="@+id/ir_homemain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ver_productos_admin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_editar"
+                android:text="@string/ir_homemain" />
+
+            <TextView
+                android:id="@+id/usuario_gym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:text="@string/usuario_gym"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/passwrod_gym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:text="@string/passwrod_gym"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

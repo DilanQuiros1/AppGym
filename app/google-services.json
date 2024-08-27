@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "804391985746",
+    "project_id": "proyectoprogra-d52fb",
+    "storage_bucket": "proyectoprogra-d52fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804391985746:android:a52034ce023dbf9374f58b",
+        "android_client_info": {
+          "package_name": "com.example.fitgymapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3_kPDE6tve_sJAXo2LviaqzhVOMddUzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

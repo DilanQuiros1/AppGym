@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerMembresiasAdmin">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_data"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/color_bar"/>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/edtmembrett"
+            android:textColor="#F66205"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"
+            android:src="@drawable/update" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="394dp"
+            android:layout_height="511dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            app:cardBackgroundColor="#1C1C1C"
+            app:cardCornerRadius="28dp"
+            android:alpha="0.8">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ListaMembresias"
+                android:layout_width="match_parent"
+                android:layout_height="511dp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/color_menu"
+            app:itemIconTint="@drawable/style_menu"
+            app:itemTextColor="@drawable/style_menu"
+            app:menu="@menu/menu_admin"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

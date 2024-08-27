@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agregar_Membresia_Admin">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_admin"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color_bar"/>
+
+    <TextView
+        android:id="@+id/tesd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/tesd"
+        android:textColor="#FF5722"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp"
+        android:layout_width="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_text_comprar"
+        android:layout_marginTop="33dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carddatos"
+        android:layout_width="344dp"
+        android:layout_height="379dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:alpha="0.7"
+        app:cardBackgroundColor="#515151"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+
+            <EditText
+                android:id="@+id/tipoMembresiaNueva"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/tipoMembresiaNueva"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/precio"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tipoMembresiaNueva"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="@string/precio"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/areas"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="@string/areas"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/descripcion"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areas"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="@string/descripcion"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      app:cardCornerRadius="10dp"
+      android:layout_centerHorizontal="true"
+      app:cardBackgroundColor="#3F51B5"
+      android:layout_below="@+id/carddatos">
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:padding="5dp"
+          android:layout_marginLeft="17dp">
+
+          <Button
+              android:id="@+id/btnAgregarMembresia"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="5dp"
+              android:text="@string/btnAgregarMembresia" />
+
+          <Button
+              android:id="@+id/btnVerMembresia"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/btnAgregarMembresia"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="5dp"
+              android:text="@string/btnVerMembresia" />
+
+          <Button
+              android:id="@+id/btnVerMembresiasCompradas"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/btnVerMembresia"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="5dp"
+              android:text="@string/btnVerMembresiasCompradas" />
+
+      </RelativeLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

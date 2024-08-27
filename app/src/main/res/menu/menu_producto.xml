@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gym_main_page"
+        android:icon="@drawable/home"
+        android:title="@string/rehsjsas" />
+
+
+    <item
+        android:id="@+id/Mis_productos"
+        android:icon="@drawable/comprar_producto"
+        android:title="@string/srhneuhowsqs" />
+
+    <item
+        android:id="@+id/agregar_producto"
+        android:icon="@drawable/add_producto"
+        android:title="@string/dsgeu4" />
+
+
+
+
+</menu>

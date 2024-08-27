@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/identrada"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_bar"
+    tools:context=".AgregarEntrenador_admin">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_admin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/color_bar" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/part_img"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtImagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Elija una Imagen de Perfil"
+                android:textColor="#FF5722"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/txtImagen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="112dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/add_img" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/ID_E"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/part_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="ID 🧍‍"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/NombreE"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ID_E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre Completo 🧍‍"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/EdadE"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NombreE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Edad 🧍‍"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/TEL_E"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdadE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Telefono 🧍‍"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnHoraInicio"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TEL_E"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_hora_inicio"
+        android:text="@string/btnHoraInicio"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/txthoraE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TEL_E"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txthoraE"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/HoraEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txthoraE"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/txthoraS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HoraEntrada"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/txthoraS"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/HoraSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txthoraS"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/teal_700" />
+
+    <Button
+        android:id="@+id/btnHoraSalida"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHoraInicio"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_hora_inicio"
+        android:text="@string/btnHoraSalida"
+        android:textSize="10dp" />
+
+
+    <Button
+        android:id="@+id/btnAgregarE"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHoraSalida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape_text_comprar"
+        android:text="@string/btnAgregarE" />
+
+
+</RelativeLayout>

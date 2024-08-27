@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:alpha="0.9"
+    android:layout_height="match_parent"
+    tools:context=".comprar_membresia_usuario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/color_bar"/>
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compra de Forma Segura Tu Membresia"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_compra"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/verificar_compra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/verificar_compra"
+            android:textColor="#FF5722"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/viewTipo"
+            android:layout_marginTop="130dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="@string/tipo_membresia"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txtTipo_compra"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewTipo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/shape_text_comprar"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/viewTipo"
+            android:padding="10dp"
+            android:text="@string/txtTipo_compra"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/viewPrecio"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:layout_marginTop="17dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTipo_compra"
+            android:text="@string/precio_membresia"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txtPrecio_compra"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="17sp"
+            android:padding="10dp"
+            android:textColor="#FF5722"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/shape_text_comprar"
+            android:layout_below="@+id/viewPrecio"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/viewPrecio"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/viewAreas"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPrecio_compra"
+            android:text="@string/areas_membresia"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txt_Areas_compra"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/viewAreas"
+            android:inputType="phone"
+            android:layout_marginLeft="25dp"
+            android:padding="10dp"
+            android:textColor="#FF5722"
+            android:background="@drawable/shape_text_comprar"
+            android:labelFor="@id/viewAreas"
+            android:textSize="17sp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/viewDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:textStyle="italic"
+            android:layout_below="@+id/txt_Areas_compra"
+            android:text="@string/descripcion_membresia"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/txt_Descripcion_compra"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/viewDescripcion"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="#FF5722"
+            android:background="@drawable/shape_text_comprar"
+            android:labelFor="@id/viewAreas"
+            android:textSize="17sp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnComprarMembresia"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.9"
+            android:background="@drawable/btn_hora_inicio"
+            android:layout_below="@+id/txt_Descripcion_compra"
+            android:text="@string/btnComprar_membresia" />
+
+        <com.paypal.checkout.paymentbutton.PaymentButtonContainer
+            android:id="@+id/payment_button_container"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.9"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnComprarMembresia"
+            android:text="Paypal" />
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_nav"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListaMembresiaCompraUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

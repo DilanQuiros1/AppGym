@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miPerfil"
+        android:icon="@drawable/mi_perfil"
+        android:title="@string/perfilperfff" />
+
+    <item
+        android:id="@+id/membresias"
+        android:icon="@drawable/compra_membresia"
+        android:title="@string/idmemmeme" />
+
+    <item
+        android:id="@+id/entrenadores"
+        android:icon="@drawable/entrenadores"
+        android:title="@string/identrennenene" />
+
+    <item
+        android:id="@+id/gym_main_page"
+        android:icon="@drawable/home"
+        android:title="@string/gtymgym" />
+    <item
+        android:id="@+id/gym_productos"
+        android:icon="@drawable/comprar_producto"
+        android:title="@string/cprafaonadea" />
+
+</menu>

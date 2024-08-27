@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item_nombresMembresia_verDatos">
+
+    <RelativeLayout
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="3dp"
+            android:background="@color/white"
+            android:layout_height="140dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+
+            android:padding="7dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="0dp"
+                >
+
+                <TextView
+                    android:id="@+id/TipoMembresia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/tipoMembresiaCompra"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAreas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/txtAreas"
+                    android:textColor="@color/card_membresia"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/AreaMembresia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/AreaMembresia"
+                    android:textColor="#00BCD4"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="wrap_content"
+                   android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="3dp" />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/viewVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingTop="50dp"
+                android:text="Ver Registros  ➡"
+                android:textColor="#D3D3D3"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="27dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

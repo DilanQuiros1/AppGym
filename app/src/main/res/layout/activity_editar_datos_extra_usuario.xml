@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272525"
+    tools:context=".Editar_datos_extra_usuario">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/color_bar" />
+
+    <TextView
+        android:id="@+id/issy"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/issy"
+        android:textColor="#F66205"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/tre"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/cuadro_img">
+
+        <ImageView
+            android:id="@+id/imageEditarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:padding="10dp"
+            app:srcCompat="@drawable/imagen" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/pessso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/pessso"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/PesoUsuEditar"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="210dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/objadc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PesoUsuEditar"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/objadc"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/ObjetivoUsuEditar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PesoUsuEditar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/ilegal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ObjetivoUsuEditar"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/ilegal"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EdadUsuEditar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ObjetivoUsuEditar"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/cornofono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ObjetivoUsuEditar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cornofono"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/TelUsuEditar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ObjetivoUsuEditar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/btnDatosEditar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdadUsuEditar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_text_comprar"
+        android:text="@string/btnDatosEditar" />
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/btnDatosEditar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/weight_libre" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_nav" />
+
+</RelativeLayout>

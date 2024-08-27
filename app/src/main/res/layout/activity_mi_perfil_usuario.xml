@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/color_menu"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Mi_perfil_usuario">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_main_usu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_nav" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/area_nom"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@drawable/forma_card_perfil">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/color_bar"/>
+
+        <TextView
+            android:id="@+id/nombre_Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/teal_700"
+            android:text="Usuario"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/card_img"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nombre_Usuario"
+            android:background="@drawable/cuadro_img">
+
+            <ImageView
+                android:id="@+id/Img_usu"
+                android:layout_width="85dp"
+                android:layout_height="87dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/imagen" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/correo_usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/CorreoUsu"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="379dp"
+        android:layout_height="550dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/forma2_perfil">
+
+        <TextView
+            android:id="@+id/text_membresia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_membresia"
+            android:textColor="#FF5722"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/text_mensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_membresia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Aun no tiene membresia"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+
+
+        <LinearLayout
+            android:id="@+id/ViewMembresia"
+            android:layout_width="269dp"
+            android:layout_height="339dp"
+            android:layout_below="@+id/text_mensaje"
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="227dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/cardmembresia_ver"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tipo_membresiaActual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="@string/tipoMembresiaCompra"
+                        android:textColor="#DC9DA2"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/mes"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/AreaMembresiaActual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/aaaarea"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/LBFechaVencimientoMembresiaActual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/LBFechaVencimientoMembresiaActual"
+                        android:textColor="#DC9DA2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/FechaVencimientoMembresiaActual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="10 10 10"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="380dp">
+
+            <ImageView
+                android:id="@+id/btnVerMisDatos"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="100dp"
+                android:background="#515151"
+                android:clickable="true"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnVerMisDatos"
+                android:layout_marginLeft="80dp"
+                android:text="@string/nita"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/btnVerMembresiasCompradas"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="230dp"
+                android:background="#515151"
+                android:clickable="true"
+                android:src="@drawable/comprar_producto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnVerMembresiasCompradas"
+                android:layout_marginLeft="200dp"
+                android:text="@string/nato"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerCarritoProductos">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/color_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/qqqewfvsda"
+        android:textColor="#03A9F4"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/qqwwq"
+        android:textColor="#FF5722"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="150dp"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+
+                    <TextView
+                        android:id="@+id/verQr"
+                        android:text="QR"
+                        android:layout_width="50dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:layout_gravity="start"
+                        android:layout_column="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/verNombre"
+                        android:layout_width="111dp"
+                        android:layout_column="1"
+                        android:layout_marginLeft="100dp"
+                        android:padding="10dp"
+                        android:text="@string/nameytst"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/verPrecio"
+                        android:layout_width="118dp"
+                        android:layout_column="1"
+                        android:layout_gravity="end"
+                        android:padding="10dp"
+                        android:text="@string/preciafy"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                </TableRow>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/vercarrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+            </TableLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="210dp"
+                 android:layout_marginTop="30dp"
+                 android:text="@string/totalpaga"
+                 android:textColor="@color/black"
+                 android:textSize="25dp"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="70dp"
+                 android:textStyle="bold"
+                 android:background="@drawable/dolar"
+                 android:textColor="@color/black"
+                 android:layout_marginLeft="240dp"
+                 android:text=""/>
+
+             <TextView
+                 android:id="@+id/precio_total"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="73dp"
+                 android:textStyle="bold"
+                 android:textColor="@color/black"
+                 android:layout_marginLeft="258dp"
+                 android:text="100"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="200dp"
+                 android:layout_marginTop="110dp"
+                 android:text="@string/siclaris"
+                 android:textColor="@color/card_membresia"
+                 android:textStyle="bold" />
+
+         </RelativeLayout>
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Comprar"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="#FF5722"
+                android:background="@drawable/shape_text_comprar"
+                android:layout_marginLeft="180dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_productos_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/color_menu"
+        app:itemIconTint="@drawable/style_menu"
+        app:itemTextColor="@drawable/style_menu"
+        app:menu="@menu/menu_productos_ver_usuarios" />
+
+
+</RelativeLayout>
